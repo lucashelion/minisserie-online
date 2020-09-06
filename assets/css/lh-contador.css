@@ -1,0 +1,18 @@
+.lh-contador {
+    width: 100%;
+    max-width: 330px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 0px;
+}
+
+.lh-contador span {
+    color: #454545;
+    font: 400 55px Roboto, sans-serif;
+}
