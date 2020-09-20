@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Evento Online</title>
+	<title>Minisserie Online</title>
 	
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/lh-contador.css" />
@@ -57,7 +57,7 @@
 										</div>
 										<div class="col-12">
 											<span class="descricao-navegacao">
-												Video 1: Liberado!
+												Video 2: LIBERADO!!
 											</span>
 										</div>
 									</div>
@@ -74,7 +74,7 @@
 										</div>
 										<div class="col-12">
 											<span class="descricao-navegacao">
-												Video 1: Liberado!
+												Video 3: NO AR!!!
 											</span>
 										</div>
 									</div>
@@ -91,7 +91,7 @@
 										</div>
 										<div class="col-12">
 											<span class="descricao-navegacao">
-												Video 1: Liberado!
+												Inscrições Abertas
 											</span>
 										</div>
 									</div>
@@ -198,7 +198,7 @@
 						<div class="col-md-4">
 							<div class="div-depo">
 								<button class="btn-depo"
-									onclick="return false">
+									onclick="exibirModal()">
 									<img class="img-fluid img-depo"
 										src="assets/images/depo/depo01.jpg" />
 								</button>
@@ -238,7 +238,7 @@
             	<div class="col-md-4 text-center">
                 	<span class="texto-contador">
 						<br />
-                    	O Evento Online será encerrado em:
+                    	A Minissérie Online será encerrada em:
 					</span>
 				</div>
 				<div class="col-md-4">
@@ -265,22 +265,22 @@
 							<div class="row text-center">
 								<div class="col-4 text-center">
 									<a class="btn btn-lg btn-primary" target="_blank"
-										href="https://www.facebook.com/nutrifertilidadebr/">
+										href="https://www.facebook.com/PenseBits/">
 										<img class="img-footer" src="assets/images/social/fb-logo.png" />
 									</a>
 									<br /><br />
 								</div>
 								<div class="col-4 text-center">
 									<a class="btn btn-lg btn-primary" target="_blank"
-										href="https://www.youtube.com/channel/UC4KP12p4iMD8QWpSSm0tMiw">
+										href="https://www.youtube.com/channel/UCyvSpKd95DyQezzFeTW5Olg">
 										<img class="img-footer" src="assets/images/social/youtube-logo.png" />
 									</a>
 									<br /><br />
 								</div>
 								<div class="col-4 text-center">
 									<a class="btn btn-lg btn-primary" target="_blank"
-										href="https://www.instagram.com/nutricaoefertilidadeoficial/">
-										<img class="img-footer" src="assets/images/social/share-logo.png" />
+										href="https://www.instagram.com/lucas.helion/">
+										<img class="img-footer" src="assets/images/social/insta-logo.png" />
 									</a>
 									<br /><br />
 								</div>
@@ -304,8 +304,64 @@
 				</div>
 			</div>
         </div>
-    </footer>
+	</footer>
+
+	<!-- Depoimento Popup -->
+	<div id="depoimentoModal" class="modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content-video">
+									<div class="video">
+										<iframe src="https://www.youtube.com/embed/gOSPKgERpsc" 
+											frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+											allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+			  		<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
+		  	</div>
+		</div>
+	</div>
+
+	 <div class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border: 1px solid #141414; background: #000;">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 id="depoimentoModal_titulo" style="font-family: 'Pacifico'; color: #fff;"
+                        class="modal-title">Título</h3>
+                </div>
+                <div class="modal-body" style="padding: 0px;">
+                    <div id="depoimentoModal_video" class="vid">
+                        <iframe src="https://www.youtube.com/embed/WvD3fo9ydSk?rel=0&showinfo=0" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
 	<script src="assets/js/lh-contador.js"></script>
 	<script src="assets/site.js"></script>
 </body>

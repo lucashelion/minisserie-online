@@ -36,6 +36,7 @@ function iniciarContador(data_alvo){
 		else if(t_h > 0) { t_h -= 1; t_m = 59; t_s = 59; }
 		else if(t_d > 0) { t_d -= 1; t_h = 23; t_m = 59; t_s = 59; }
 		else {
+			t_d=0; t_h=0; t_m=0; t_s=0;
 			alert("Chegou o grande dia!");
 			clearInterval(timer_id);
 		}
