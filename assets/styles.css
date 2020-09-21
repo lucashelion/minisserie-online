@@ -211,6 +211,64 @@ input, button {
     font: 400 14px Roboto, sans-serif;
 }
 
+.popup-depo {
+    background: #000;
+    border: 1px solid #141414;
+}
+
+.popup-depo .popup-depo-titulo {
+    color: #fff;
+    font-family: var(--font-principal), sans-serif;
+}
+
+.popup-depo .popup-depo-video {
+    width: 760px;
+    height: 427.5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .popup-depo .popup-depo-video {
+        width: 320px;
+        height: 300px;
+    }
+}
+
+.popup-exit {
+    background: #000;
+    border: 1px solid #141414;
+}
+
+.popup-exit .popup-exit-titulo {
+    color: #fff;
+    font-family: var(--font-principal), sans-serif;
+}
+
+.popup-exit .popup-exit-texto {
+    color: #fff;
+    font-family: var(--font-principal), sans-serif;
+    font-size: 14px;
+}
+
+.popup-exit .btn-cta {
+    width: 100%;
+    height: 60px;
+    background: var(--fundo-btn-cta);
+    border: 0;
+    border-radius: 8px;
+    color: var(--color-btn-cta);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 2px;
+    transition: filter 0.2s;
+}
+
+.popup-exit .btn-cta:hover {
+    filter: brightness(90%);
+}
+
+
 
 
 
